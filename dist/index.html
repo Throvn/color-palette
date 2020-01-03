@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    
+    <title>Image to Color Palette</title>
+    <script src="bundle.js"></script>
+  </head>
+  <body>
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-lg-6 bg-light py-3 rounded-md-top rounded-lg-left" style="min-height: 300px;">
+          <img id="mainImage" class="rounded" width="100%" alt="">
+          <div id="error-container" class="alert alert-danger mt-3" role="alert" style="display: none;">
+            <strong>Error!</strong> <span id="error-msg"></span>
+          </div>
+        </div>
+      
+        <div class="col-lg-6 bg-light rounded-md-bottom rounded-lg-right">
+          <hr>
+          <div class="row">
+              <div id="colors" class="text-center w-100" style="min-height: 62px;">
+                <span id="settings" title="Settings" data-toggle="tooltip" data-placement="top" class="btn btn-secondary m-2 mr-4" style="display: inline-block; width: 40px; height:40px; margin-top: -40px !important;">
+                  <i class="codicon codicon-settings"> </i>
+                </span>
+              </div>
+          </div>
+          <hr>
+          <div class="row text-left mb-3">
+            <div class="col" style="min-height: 245px;">
+              <h3 id="activeColor">Vibrant</h3>
+              <div class="color-picker-container text-center">
+                <div class="color-picker">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div id="popover-content" class="d-none">
+      <center>
+        Want to test a <b>certain</b> image? <br>
+        <input id="customImage" class="rounded border" type="url" placeholder="paste the link here">
+      </center>
+      <hr>
+      <b>Note: </b> This works only with images which are not protected by CORS e.g. github images are not working (although they are displayed, no palette is created)
+      <hr>
+      <b> Fun fact: </b>If you click on one of the swatches the rgb color code is copied to your clipboard automatically.
+    </div>
+    <div class="fixed-bottom text-right p-3">
+      <a href="https://www.github.com/Throvn" target="_blank" class="a-profile"><i class="m-0 codicon codicon-octoface" style="font-size: 50px;"></i><span class="h2">/</span>Throvn</a>
+    </div>
+  </body>
+</html>

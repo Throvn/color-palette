@@ -16,7 +16,7 @@
   "dependencies": {
     "@simonwep/pickr": "^1.4.8",
     "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lodash": "^4.17.15",
     "node-vibrant": "^3.1.5",
     "popper.js": "^1.16.0",
